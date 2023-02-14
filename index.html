@@ -5,15 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Editor</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/a51a0813f0.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
-      <h2 class="text-5xl">Text Editor</h2>
+    <header class="text-center w-9/12 mx-auto my-12">
+      <section>
+        <h2 class="text-5xl font-semibold">
+          <i class="fa-regular fa-file-lines"></i> Text Editor
+        </h2>
+      </section>
     </header>
-    <main></main>
 
+    <main class="my-10">
+      <section
+        class="w-9/12 mx-auto p-8 rounded-lg border-black border-2 bg-slate-400"
+      >
+        <section class="mb-5 flex justify-between gap-1">
+          <!-- Style Options -->
+          <div
+            class="flex flex-col md:flex-row gap-1 justify-center items-center"
+          >
+            <button id="bold" class="p-2 rounded bg-white"><b>B</b></button>
+            <button id="italic" class="p-2 rounded bg-white"><i>I</i></button>
+            <button id="underline" class="p-2 rounded bg-white">
+              <u>U</u>
+            </button>
+          </div>
+
+          <!-- Align Options -->
+          <div
+            class="flex flex-col md:flex-row gap-1 justify-center items-center"
+          >
+            <button id="align-left" class="p-2 rounded bg-white">
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button id="align-center" class="p-2 rounded bg-white">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button id="align-right" class="p-2 rounded bg-white">
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row gap-1 justify-center items-center"
+          >
+            <!-- Font Size -->
+            <select
+              id="font-size"
+              class="p-2 rounded bg-white"
+              name="font-size"
+              class="rounded"
+            >
+              <option value="11">11</option>
+              <option value="14">14</option>
+              <option value="18">18</option>
+              <option value="25">15</option>
+            </select>
+            <!-- Case  -->
+            <button id="case" class="p-2 rounded bg-white">aA</button>
+            <input
+              type="color"
+              id="select-color"
+              class="rounded p-2 bg-white h-10"
+              name="select-color"
+              value="#000000"
+            />
+          </div>
+        </section>
+
+        <!-- Editor -->
+        <article>
+          <textarea
+            id="text-area"
+            class="w-full h-full p-3 border-black border rounded-md"
+            name="editor"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </article>
+      </section>
+    </main>
+
+    <footer class="w-3/6 mx-auto text-center my-2 font-light">
+      <p>Copyright &copy; 2023 fattahsamit | All Rights Received</p>
+    </footer>
     <script src="js/editor.js"></script>
   </body>
 </html>
