@@ -17,5 +17,4 @@ const underline = document.getElementById("underline");
 underline.addEventListener("click", function () {
   this.classList.toggle("outline");
   text.classList.toggle("underline");
-  console.log("chutiya");
 });
