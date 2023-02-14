@@ -18,7 +18,8 @@
     <header class="text-center w-9/12 mx-auto my-12">
       <section>
         <h2 class="text-5xl font-semibold">
-          <i class="fa-regular fa-file-lines"></i> Text Editor
+          <i class="fa-regular fa-file-lines"></i> Text
+          <span class="text-slate-500">Editor</span>
         </h2>
       </section>
     </header>
@@ -54,23 +55,28 @@
             </button>
           </div>
 
-          <div
-            class="flex flex-col md:flex-row gap-1 justify-center items-center"
-          >
+          <div class="flex flex-col md:flex-row gap-1 justify-end items-end">
             <!-- Font Size -->
-            <select
+            <input
               id="font-size"
-              class="p-2 rounded bg-white"
+              class="p-2 rounded w-4/12 bg-white"
+              type="number"
               name="font-size"
+              value="12"
+            />
+
+            <!-- Case  -->
+            <select
+              id="case"
+              class="p-2 rounded bg-white"
+              name="case"
               class="rounded"
             >
-              <option value="11">11</option>
-              <option value="14">14</option>
-              <option value="18">18</option>
-              <option value="25">15</option>
+              <option id="lower-case">aA</option>
+              <option id="upper-case">Aa</option>
             </select>
-            <!-- Case  -->
-            <button id="case" class="p-2 rounded bg-white">aA</button>
+
+            <!-- Color -->
             <input
               type="color"
               id="select-color"
