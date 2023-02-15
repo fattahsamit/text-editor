@@ -3,9 +3,12 @@
 Responsive web application that allows users to create and edit plain text documents directly in any web browser.Designed to be fully responsive and functional, meaning it will work seamlessly on devices of all sizes as long as you have internet connection.
 
 🔗 Live Site: https://fattahsamit.github.io/text-editor/
+
 📜 Repository: https://github.com/fattahsamit/text-editor
 
 ## Technology
+
+![Tools](https://skills.thijs.gg/icons?i=html,tailwind,js)
 
 The editor's user interface is created using HTML and Tailwind CSS, while its functionality is implemented using JavaScript.
 
