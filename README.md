@@ -10,8 +10,6 @@ Responsive web application that allows users to create and edit plain text docum
 
 ![Tools](https://skills.thijs.gg/icons?i=html,tailwind,js)
 
-<p align="center"> ![Tools](https://skills.thijs.gg/icons?i=html,tailwind,js) </p>
-
 The editor's user interface is created using HTML and Tailwind CSS, while its functionality is implemented using JavaScript.
 
 ## Features
